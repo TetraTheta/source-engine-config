@@ -1,0 +1,19 @@
+
+@include "base.fgd"
+@include "halflife2.fgd"
+@include "garrysmod.fgd"
+
+@BaseClass base(Targetname, Origin) = sc_point
+[
+	input Kill(void) : "Removes this entity from the world."
+	input KillHierarchy(void) : "Removes this entity and all its children from the world."
+]
+
+@PointClass base(sc_point) iconsprite("editor/lua_run.vmt") = sc_changelevel : "Custom implementation of 'trigger_changelevel' that doesn't require 'info_landmark'"
+[
+	map(string) : "Next Map" : "" : "The name of the map to load next (e.g., gm_construct)."
+
+	input ChangeLevel(void) : "Triggers the level change immediately using the map specified in the 'Next Map' property."
+]
+
+// env_hudhint is declared at 'base.fgd', so no need to implement it.
