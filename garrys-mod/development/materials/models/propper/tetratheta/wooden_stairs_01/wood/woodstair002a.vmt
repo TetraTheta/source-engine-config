@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "wood/woodstair002a"
+	"%keywords" "c17skyscraper"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmapcontrast" "1"
+	"$envmapsaturation" "0.200000"
+	"$envmaptint" "[ .56 .56 .56 ]"
+	"$model" "1"
+}
