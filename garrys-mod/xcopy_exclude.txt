@@ -1,0 +1,3 @@
+copy.cmd
+launch_option.txt
+xcopy_exclude.txt
